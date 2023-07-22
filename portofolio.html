@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <script src="./script-portofolio.js"></script>
   </head>
   <body class="portofolio">
     <header>
@@ -28,7 +29,7 @@
             </a>
             <div class="menu-bar">
               <ul>
-                <li><a class="studio" href="index.html" >Studio</a></li>
+                <li><a class="studio" href="index.html">Studio</a></li>
                 <li>
                   <a class="portofolio" href="portofolio.html">Portofolio</a>
                 </li>
@@ -57,12 +58,35 @@
       <div class="container1">
         <section>
           <div class="filter1">
-            <!-- O sa las onclick la toate , o sa avem nevoie de ele cand o sa filtram elementele in JS  -->
-            <button class="btn-active" onclick="" type="button">All</button>
-            <button class="btnWeb" onclick="" type="button">Web-sites</button>
-            <button class="btnApps" onclick="" type="button">Apps</button>
-            <button class="btnDesign" onclick="" type="button">Design</button>
-            <button class="btnMarketing" onclick="" type="button">
+            <button
+              class="btn-active"
+              onclick="filterImages('All')"
+              type="button"
+            >
+              All
+            </button>
+            <button class="btnWeb" onclick="filterImages('Web-site')">
+              Web-sites
+            </button>
+            <button
+              class="btnApps"
+              onclick="filterImages('Apps')"
+              type="button"
+            >
+              Apps
+            </button>
+            <button
+              class="btnDesign"
+              onclick="filterImages('Design')"
+              type="button"
+            >
+              Design
+            </button>
+            <button
+              class="btnMarketing"
+              onclick="filterImages('Marketing')"
+              type="button"
+            >
               Marketing
             </button>
           </div>
@@ -70,91 +94,158 @@
         <section class="project">
           <div class="global-project">
             <div class="project1">
-              <img
-                src="images/project1-portofolio.jpg"
-                alt="Web-site on a laptop"
-                width="370"
-              />
+              <div class="img-container">
+                <img
+                  class="image-project"
+                  src="images/project1-portofolio.jpg"
+                  alt="Web-site on a laptop"
+                  width="370"
+                />
+                <div class="img-overlay">
+                  <div class="img-text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </div>
+                </div>
+              </div>
               <h2>Technoduck</h2>
               <span>Web-site</span>
             </div>
 
             <div class="project1">
-              <img
-                src="images/project2-portofolio.jpg"
-                alt="Two basketball players from New Orlean and Golden Start"
-                width="370"
-              />
+              <div class="img-container">
+                <img
+                  src="images/project2-portofolio.jpg"
+                  alt="Two basketball players from New Orlean and Golden Start"
+                  width="370"
+                />
+                <div class="img-overlay">
+                  <div class="img-text">
+                    
+                  </div>
+                </div>
+              </div>
               <h2>Poster New Orlean vs Golden Star</h2>
               <span>Design</span>
             </div>
 
             <div class="project1">
-              <img
-                src="images/project3-portofolio.jpg"
-                alt="Seafood Restaurant logo"
-                width="370"
-              />
+              <div class="img-container">
+                <img
+                  src="images/project3-portofolio.jpg"
+                  alt="Seafood Restaurant logo"
+                  width="370"
+                />
+                <div class="img-overlay">
+                  <div class="img-text">
+                    
+                  </div>
+                </div>
+              </div>
               <h2>Seafood Restaurant</h2>
               <span>Apps</span>
             </div>
 
             <div class="project1">
+              <div class="img-container">
               <img
                 src="images/project4-portofolio.jpg"
                 alt="A pic with headset"
                 width="370"
               />
+              <div class="img-overlay">
+                <div class="img-text">
+                  
+                </div>
+              </div>
+              </div>
               <h2>Project Prime</h2>
               <span>Marketing</span>
             </div>
 
             <div class="project1">
+              <div class="img-container">
               <img
                 src="images/project5-portofolio.jpg"
                 alt="two small boxes"
                 width="370"
               />
+              <div class="img-overlay">
+                <div class="img-text">
+                 
+                </div>
+              </div>
+              </div>
+
               <h2>Project Boxes</h2>
               <span>Apps</span>
             </div>
 
             <div class="project1">
+              <div class="img-container">
               <img
                 src="images/project6-portofolio.jpg"
                 alt="Web-site presentation on iMac"
                 width="370"
               />
+              <div class="img-overlay">
+                <div class="img-text">
+                  
+                </div>
+              </div>
+              </div>
               <h2>Inspiration has no Borders</h2>
               <span>Web-site</span>
             </div>
 
             <div class="project1">
+              <div class="img-container">
               <img
                 src="images/project7-portofolio.jpg"
                 alt="An open book"
                 width="370"
               />
+              <div class="img-overlay">
+                <div class="img-text">
+                 
+                </div>
+              </div>
+              </div>
               <h2>Limited Edition</h2>
               <span>Design</span>
             </div>
 
             <div class="project1">
+              <div class="img-container">
               <img
                 src="images/project8-portofolio.jpg"
                 alt="Label Mockup "
                 width="370"
               />
+              <div class="img-overlay">
+                <div class="img-text">
+                  
+                </div>
+              </div>
+              </div>
               <h2>Project LAB</h2>
               <span>Marketing</span>
             </div>
 
             <div class="project1">
+              <div class="img-container">
               <img
                 src="images/project9-portofolio.jpg"
                 alt="Web-site on a MacBook"
                 width="370"
               />
+              <div class="img-overlay">
+                <div class="img-text">
+                  
+                </div>
+              </div>
+              </div>
               <h2>Growing Business</h2>
               <span>Apps</span>
             </div>
@@ -165,7 +256,7 @@
     <footer class="main-footer">
       <section class="container-section">
         <div class="global-footer">
-          <a href="index.html" class="logo"
+          <a href="portofolio.html" class="logo"
             ><span class="web-logo">Web</span>Studio</a
           >
           <address class="mail-phone">

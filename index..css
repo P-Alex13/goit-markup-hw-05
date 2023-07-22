@@ -904,10 +904,9 @@ box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5); 
  pointer-events: none;
-  
-  
+ 
+ 
 }
-
 
 .modal-content{
   padding:16px;
@@ -917,11 +916,9 @@ height: 581px;
 flex-shrink: 0;
   margin:0 auto;
   position: relative;
-  
- 
- 
+  transform: scale(1); 
+  transition: opacity 0.3s ease-in, transform 0.3s ease-in; 
 }
-
 
 .is-hidden{
 visibility: hidden;
@@ -938,12 +935,11 @@ cursor: pointer;
 position: absolute;
 right: 10px;
 top:16px;
-
 }
-
 
 .close-btn {
   background-color: #fff;
   border: none;
 }
+
 
