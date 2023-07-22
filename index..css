@@ -408,6 +408,39 @@ flex-shrink: 0;
   letter-spacing: 1.08px;
 }
 
+
+
+.cards-elements{
+ 
+  position: relative;
+  
+}
+
+.overlay-text{
+  position: absolute;
+  bottom: 3.5px;
+ width: 370px;
+height: 70px;
+flex-shrink: 0;
+  background: rgba(47, 48, 58, 0.80);
+  margin-top:224px;
+  
+  
+}
+.overlay-text h2{
+  color: #FFF;
+text-align: center;
+font-family: "Roboto";
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+margin-top:27px
+
+}
+
 /* Our Team Section*/
 
 .our-team {
